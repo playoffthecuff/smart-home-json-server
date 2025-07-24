@@ -1,0 +1,103 @@
+{
+  "info": {
+    "_postman_id": "fd89c864-9984-466c-99e6-8b045f175789",
+    "name": "Smart Home UI",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "1659067"
+  },
+  "item": [
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "userName",
+              "value": "",
+              "type": "text"
+            },
+            {
+              "key": "password",
+              "value": "",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:3004/api/user/login",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3004",
+          "path": ["api", "user", "login"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "User Profile",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:3004/api/user/profile",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3004",
+          "path": ["api", "user", "profile"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Dashboards",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:3004/api/dashboards",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3004",
+          "path": ["api", "dashboards"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Dashboard by ID",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:3004/api/dashboards/overview",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3004",
+          "path": ["api", "dashboards", "overview"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
