@@ -4,15 +4,31 @@
 
 1. Install dependencies:
 
-   ```bash
-   npm install
-   ```
+    1.1 Node.js:
+
+    ```bash
+    npm install
+    ```
+
+    1.2 Bun:
+
+    ```bash
+    bun install
+    ```
 
 2. Start the server:
 
-   ```bash
-   npm start
-   ```
+    2.1 Node.js:
+
+    ```bash
+    npm start
+    ```
+
+    2.2 Bun:
+
+    ```bash
+    bun run start:bun
+    ```
 
    The API will be available at: [http://localhost:3004](http://localhost:3004)
 

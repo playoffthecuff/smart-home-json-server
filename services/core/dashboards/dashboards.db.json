@@ -3,7 +3,7 @@
     {
       "id": "overview",
       "title": "Overview",
-      "icon": "home",
+      "icon": "@tui.home",
       "tabs": [
         {
           "id": "overview",
@@ -16,7 +16,7 @@
               "items": [
                 {
                   "type": "sensor",
-                  "icon": "thermostat",
+                  "icon": "@tui.thermometer",
                   "label": "Temperature",
                   "value": {
                     "amount": 18.5,
@@ -25,7 +25,7 @@
                 },
                 {
                   "type": "sensor",
-                  "icon": "water_drop",
+                  "icon": "@tui.waves",
                   "label": "Humidity",
                   "value": {
                     "amount": 72,
@@ -34,7 +34,7 @@
                 },
                 {
                   "type": "sensor",
-                  "icon": "cloud",
+                  "icon": "@tui.cloudy",
                   "label": "Weather",
                   "value": {
                     "amount": 1,
@@ -50,7 +50,7 @@
               "items": [
                 {
                   "type": "sensor",
-                  "icon": "co2",
+                  "icon": "https://cdn-icons-png.flaticon.com/128/1633/1633518.png",
                   "label": "CO2 Sensor",
                   "value": {
                     "amount": 520,
@@ -59,7 +59,7 @@
                 },
                 {
                   "type": "sensor",
-                  "icon": "water_drop",
+                  "icon": "@tui.waves",
                   "label": "Humidity",
                   "value": {
                     "amount": 45,
@@ -75,7 +75,7 @@
               "items": [
                 {
                   "type": "sensor",
-                  "icon": "motion_photos_on",
+                  "icon": "https://cdn-icons-png.flaticon.com/512/17257/17257375.png",
                   "label": "Motion Sensor",
                   "value": {
                     "amount": 1,
@@ -91,19 +91,19 @@
               "items": [
                 {
                   "type": "device",
-                  "icon": "lightbulb",
+                  "icon": "@tui.lightbulb",
                   "label": "Floor Lamp",
                   "state": true
                 },
                 {
                   "type": "device",
-                  "icon": "power",
+                  "icon": "@tui.plug-zap",
                   "label": "TV Socket",
                   "state": false
                 },
                 {
                   "type": "sensor",
-                  "icon": "thermostat",
+                  "icon": "@tui.thermometer",
                   "label": "Temperature",
                   "value": {
                     "amount": 23.5,
@@ -112,7 +112,7 @@
                 },
                 {
                   "type": "sensor",
-                  "icon": "co2",
+                  "icon": "https://cdn-icons-png.flaticon.com/128/1633/1633518.png",
                   "label": "CO2 Sensor",
                   "value": {
                     "amount": 610,
@@ -134,7 +134,7 @@
               "items": [
                 {
                   "type": "device",
-                  "icon": "lightbulb",
+                  "icon": "https://cdn-icons-png.flaticon.com/128/607/607770.png",
                   "label": "Ceiling Light",
                   "state": true
                 }
@@ -147,7 +147,7 @@
               "items": [
                 {
                   "type": "device",
-                  "icon": "lightbulb",
+                  "icon": "https://cdn-icons-png.flaticon.com/128/16587/16587754.png",
                   "label": "Ceiling Light",
                   "state": false
                 }
@@ -160,7 +160,7 @@
               "items": [
                 {
                   "type": "device",
-                  "icon": "lightbulb",
+                  "icon": "https://cdn-icons-png.flaticon.com/128/17494/17494879.png",
                   "label": "Chandelier",
                   "state": true
                 }
@@ -173,7 +173,7 @@
               "items": [
                 {
                   "type": "device",
-                  "icon": "lightbulb",
+                  "icon": "https://cdn-icons-png.flaticon.com/128/5499/5499980.png",
                   "label": "Main Light",
                   "state": true
                 }
@@ -186,7 +186,7 @@
               "items": [
                 {
                   "type": "device",
-                  "icon": "lightbulb",
+                  "icon": "https://cdn-icons-png.flaticon.com/128/17742/17742862.png",
                   "label": "Ceiling Light",
                   "state": false
                 }
@@ -199,7 +199,7 @@
     {
       "id": "electricity",
       "title": "Electricity",
-      "icon": "bolt",
+      "icon": "@tui.plug-zap",
       "tabs": [
         {
           "id": "usage",
@@ -212,7 +212,7 @@
               "items": [
                 {
                   "type": "sensor",
-                  "icon": "flash_on",
+                  "icon": "https://cdn-icons-png.flaticon.com/512/5556/5556394.png",
                   "label": "Total Usage",
                   "value": {
                     "amount": 2.5,
@@ -221,7 +221,7 @@
                 },
                 {
                   "type": "sensor",
-                  "icon": "access_time",
+                  "icon": "https://cdn-icons-png.flaticon.com/512/12505/12505585.png",
                   "label": "Peak Hour",
                   "value": {
                     "amount": 1,
@@ -237,7 +237,7 @@
               "items": [
                 {
                   "type": "sensor",
-                  "icon": "tv",
+                  "icon": "@tui.tv",
                   "label": "TV",
                   "value": {
                     "amount": 0.8,
@@ -246,7 +246,7 @@
                 },
                 {
                   "type": "sensor",
-                  "icon": "kitchen",
+                  "icon": "@tui.microwave",
                   "label": "Microwave",
                   "value": {
                     "amount": 0.5,
@@ -255,7 +255,7 @@
                 },
                 {
                   "type": "sensor",
-                  "icon": "heat_pump",
+                  "icon": "https://cdn-icons-png.flaticon.com/128/740/740973.png",
                   "label": "Heater",
                   "value": {
                     "amount": 1.2,
@@ -271,7 +271,7 @@
     {
       "id": "climate",
       "title": "Climate",
-      "icon": "device_thermostat",
+      "icon": "@tui.thermometer",
       "tabs": [
         {
           "id": "inside",
@@ -284,7 +284,7 @@
               "items": [
                 {
                   "type": "sensor",
-                  "icon": "thermostat",
+                  "icon": "@tui.thermometer",
                   "label": "Temperature",
                   "value": {
                     "amount": 21.0,
@@ -293,7 +293,7 @@
                 },
                 {
                   "type": "sensor",
-                  "icon": "water_drop",
+                  "icon": "@tui.waves",
                   "label": "Humidity",
                   "value": {
                     "amount": 40,
@@ -309,7 +309,7 @@
               "items": [
                 {
                   "type": "sensor",
-                  "icon": "thermostat",
+                  "icon": "@tui.thermometer",
                   "label": "Temperature",
                   "value": {
                     "amount": 22.8,
@@ -318,7 +318,7 @@
                 },
                 {
                   "type": "sensor",
-                  "icon": "co2",
+                  "icon": "https://cdn-icons-png.flaticon.com/128/1633/1633518.png",
                   "label": "CO2",
                   "value": {
                     "amount": 460,
@@ -334,7 +334,7 @@
     {
       "id": "security",
       "title": "Security",
-      "icon": "shield",
+      "icon": "@tui.shield",
       "tabs": [
         {
           "id": "home-security",
@@ -347,7 +347,7 @@
               "items": [
                 {
                   "type": "device",
-                  "icon": "door_front",
+                  "icon": "https://cdn-icons-png.flaticon.com/128/9655/9655364.png",
                   "label": "Door Lock",
                   "state": true
                 }
@@ -360,13 +360,13 @@
               "items": [
                 {
                   "type": "device",
-                  "icon": "videocam",
+                  "icon": "@tui.video",
                   "label": "Camera Front",
                   "state": true
                 },
                 {
                   "type": "sensor",
-                  "icon": "motion_photos_on",
+                  "icon": "https://cdn-icons-png.flaticon.com/512/17257/17257375.png",
                   "label": "Motion",
                   "value": {
                     "amount": 1,
@@ -382,7 +382,7 @@
               "items": [
                 {
                   "type": "device",
-                  "icon": "notifications_active",
+                  "icon": "@tui.siren",
                   "label": "Main Alarm",
                   "state": false
                 }
