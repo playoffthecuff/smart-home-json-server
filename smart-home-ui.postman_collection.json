@@ -29,12 +29,17 @@
         "url": {
           "raw": "http://localhost:3004/api/user/login",
           "protocol": "http",
-          "host": ["localhost"],
+          "host": [
+            "localhost"
+          ],
           "port": "3004",
-          "path": ["api", "user", "login"]
+          "path": [
+            "api",
+            "user",
+            "login"
+          ]
         }
-      },
-      "response": []
+      }
     },
     {
       "name": "User Profile",
@@ -43,19 +48,23 @@
         "header": [
           {
             "key": "Authorization",
-            "value": "Bearer",
-            "type": "text"
+            "value": "Bearer REPLACE_WITH_REAL_TOKEN"
           }
         ],
         "url": {
           "raw": "http://localhost:3004/api/user/profile",
           "protocol": "http",
-          "host": ["localhost"],
+          "host": [
+            "localhost"
+          ],
           "port": "3004",
-          "path": ["api", "user", "profile"]
+          "path": [
+            "api",
+            "user",
+            "profile"
+          ]
         }
-      },
-      "response": []
+      }
     },
     {
       "name": "Get Dashboards",
@@ -64,19 +73,22 @@
         "header": [
           {
             "key": "Authorization",
-            "value": "Bearer",
-            "type": "text"
+            "value": "Bearer REPLACE_WITH_REAL_TOKEN"
           }
         ],
         "url": {
           "raw": "http://localhost:3004/api/dashboards",
           "protocol": "http",
-          "host": ["localhost"],
+          "host": [
+            "localhost"
+          ],
           "port": "3004",
-          "path": ["api", "dashboards"]
+          "path": [
+            "api",
+            "dashboards"
+          ]
         }
-      },
-      "response": []
+      }
     },
     {
       "name": "Get Dashboard by ID",
@@ -85,19 +97,138 @@
         "header": [
           {
             "key": "Authorization",
-            "value": "Bearer",
-            "type": "text"
+            "value": "Bearer REPLACE_WITH_REAL_TOKEN"
           }
         ],
         "url": {
           "raw": "http://localhost:3004/api/dashboards/overview",
           "protocol": "http",
-          "host": ["localhost"],
+          "host": [
+            "localhost"
+          ],
           "port": "3004",
-          "path": ["api", "dashboards", "overview"]
+          "path": [
+            "api",
+            "dashboards",
+            "overview"
+          ]
         }
-      },
-      "response": []
+      }
+    },
+    {
+      "name": "Update Dashboard",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer REPLACE_WITH_REAL_TOKEN"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"tabs\": [\n    {\n      \"id\": \"main\",\n      \"title\": \"Main\",\n      \"cards\": [\n        {\n          \"id\": \"living-room\",\n          \"title\": \"Living Room\",\n          \"layout\": \"verticalLayout\",\n          \"items\": [\n            {\n              \"type\": \"device\",\n              \"icon\": \"lightbulb\",\n              \"label\": \"Lamp\",\n              \"state\": true\n            }\n          ]\n        }\n      ]\n    }\n  ]\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3004/api/dashboards/overview",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3004",
+          "path": [
+            "api",
+            "dashboards",
+            "overview"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Delete Dashboard",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer REPLACE_WITH_REAL_TOKEN"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:3004/api/dashboards/temp-dashboard",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3004",
+          "path": [
+            "api",
+            "dashboards",
+            "temp-dashboard"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get Devices",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer REPLACE_WITH_REAL_TOKEN"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:3004/api/devices",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3004",
+          "path": [
+            "api",
+            "devices"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Update Device",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer REPLACE_WITH_REAL_TOKEN"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"state\": true\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3004/api/devices/device-1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3004",
+          "path": [
+            "api",
+            "devices",
+            "device-1"
+          ]
+        }
+      }
     }
   ]
 }

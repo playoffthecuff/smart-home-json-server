@@ -20,6 +20,7 @@
 
 - The backend uses **sample data** stored in `*.db.json` files.
 - You are free to **modify or replace** this data to suit your testing needs.
+- All in-memory changes (e.g., via PATCH/POST/DELETE) will be lost after restarting the server.
 
 ## Postman Collection
 
@@ -123,5 +124,132 @@ Requires `Authorization: Bearer <token>` header.
       ]
     }
   ]
+}
+```
+
+#### `POST /api/dashboards/:dashboardId`
+
+Replace the contents of a dashboard.
+
+Requires `Authorization: Bearer <token>` header.
+
+**Request body:**
+
+```json
+{
+  "tabs": [
+    {
+      "id": "main",
+      "title": "Main",
+      "cards": [
+        {
+          "id": "living-room",
+          "title": "Living Room",
+          "layout": "verticalLayout",
+          "items": [
+            {
+              "type": "device",
+              "icon": "lightbulb",
+              "label": "Lamp",
+              "state": true
+            },
+            {
+              "type": "sensor",
+              "icon": "thermostat",
+              "label": "Temperature",
+              "value": {
+                "amount": 23.5,
+                "unit": "°C"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+
+**Response:**
+
+Returns the full updated dashboard object:
+
+```json
+{
+  "id": "overview",
+  "title": "Overview",
+  "icon": "home",
+  "tabs": [...]
+}
+```
+
+#### `DELETE /api/dashboards/:dashboardId`
+
+Delete the specified dashboard.
+
+Requires `Authorization: Bearer <token>` header.
+
+**Response:**
+
+```
+204 No Content
+```
+
+---
+
+### Devices
+
+#### `GET /api/devices`
+
+Get list of all available devices.
+
+Requires `Authorization: Bearer <token>` header.
+
+**Response:**
+
+```json
+[
+  {
+    "id": "device-1",
+    "type": "device",
+    "icon": "lightbulb",
+    "label": "Living Room Light",
+    "state": true
+  },
+  {
+    "id": "device-2",
+    "type": "device",
+    "icon": "power",
+    "label": "TV Socket",
+    "state": false
+  }
+]
+```
+
+#### `PATCH /api/devices/:deviceId`
+
+Update the state of a device across both `dashboards` and the `devices` list.
+
+Requires `Authorization: Bearer <token>` header.
+
+**Request body:**
+
+```json
+{
+  "state": true
+}
+```
+
+**Response:**
+
+Returns the full updated device object:
+
+```json
+{
+  "id": "device-1",
+  "type": "device",
+  "icon": "lightbulb",
+  "label": "Living Room Light",
+  "state": true
 }
 ```
