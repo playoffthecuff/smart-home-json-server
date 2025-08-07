@@ -55,19 +55,25 @@ module.exports = (server) => {
 
       const updatedDashboards = db.dashboards.map((dashboard) => ({
         ...dashboard,
-        tabs: dashboard.tabs.map((tab) => ({
-          ...tab,
-          cards: tab.cards.map((card) => ({
-            ...card,
-            items: card.items.map((item) => {
-              if (item.id === deviceId && item.type === "device") {
-                wasInDashboards = true;
-                return { ...item, state };
-              }
-              return item;
-            }),
-          })),
-        })),
+        tabs: Array.isArray(dashboard.tabs)
+          ? dashboard.tabs.map((tab) => ({
+              ...tab,
+              cards: Array.isArray(tab.cards)
+                ? tab.cards.map((card) => ({
+                    ...card,
+                    items: Array.isArray(card.items)
+                      ? card.items.map((item) => {
+                          if (item.id === deviceId && item.type === "device") {
+                            wasInDashboards = true;
+                            return { ...item, state };
+                          }
+                          return item;
+                        })
+                      : [],
+                  }))
+                : [],
+            }))
+          : [],
       }));
 
       server.db.setState({
