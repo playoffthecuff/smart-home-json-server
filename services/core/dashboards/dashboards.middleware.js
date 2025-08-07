@@ -59,8 +59,6 @@ module.exports = (server) => {
         dashboards: updatedDashboards,
       });
 
-      server.db.write();
-
       res.status(201).json(newDashboard);
     }
   );

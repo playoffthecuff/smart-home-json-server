@@ -44,7 +44,14 @@ module.exports = (server) => {
           .send("Only devices of type 'device' can be updated");
       }
 
-      let found = false;
+      const updatedDevices = db.devices.map((device) => {
+        if (device.id === deviceId && device.type === "device") {
+          return { ...device, state };
+        }
+        return device;
+      });
+
+      let wasInDashboards = false;
 
       const updatedDashboards = db.dashboards.map((dashboard) => ({
         ...dashboard,
@@ -54,7 +61,7 @@ module.exports = (server) => {
             ...card,
             items: card.items.map((item) => {
               if (item.id === deviceId && item.type === "device") {
-                found = true;
+                wasInDashboards = true;
                 return { ...item, state };
               }
               return item;
@@ -63,25 +70,17 @@ module.exports = (server) => {
         })),
       }));
 
-      const updatedDevices = db.devices.map((device) => {
-        if (device.id === deviceId && device.type === "device") {
-          found = true;
-          return { ...device, state };
-        }
-        return device;
-      });
-
       server.db.setState({
         ...db,
-        dashboards: updatedDashboards,
         devices: updatedDevices,
+        dashboards: wasInDashboards ? updatedDashboards : db.dashboards,
       });
 
       const updatedDevice = updatedDevices.find(
         (d) => d.id === deviceId && d.type === "device"
       );
 
-      res.status(200).json(updatedDevice || { id: deviceId, state });
+      res.status(200).json(updatedDevice);
     }
   );
 
