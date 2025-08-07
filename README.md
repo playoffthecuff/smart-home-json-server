@@ -87,6 +87,34 @@ Requires `Authorization: Bearer <token>` header.
 ]
 ```
 
+#### `POST /api/dashboards`
+
+Create a new dashboard.
+
+Requires `Authorization: Bearer <token>` header.
+
+**Request body:**
+
+```json
+{
+  "id": "climate",
+  "title": "Climate",
+  "icon": "device_thermostat"
+}
+```
+
+All fields are required and must be non-empty strings.
+
+**Response:**
+
+```json
+{
+  "id": "climate",
+  "title": "Climate",
+  "icon": "device_thermostat",
+}
+```
+
 #### `GET /api/dashboards/:dashboardId`
 
 Get tabs and cards for a specific dashboard.
@@ -127,9 +155,9 @@ Requires `Authorization: Bearer <token>` header.
 }
 ```
 
-#### `POST /api/dashboards/:dashboardId`
+#### `PUT /api/dashboards/:dashboardId`
 
-Replace the contents of a dashboard.
+Replace the contents of an existing dashboard.
 
 Requires `Authorization: Bearer <token>` header.
 
@@ -176,10 +204,36 @@ Returns the full updated dashboard object:
 
 ```json
 {
-  "id": "overview",
-  "title": "Overview",
-  "icon": "home",
-  "tabs": [...]
+  "tabs": [
+    {
+      "id": "main",
+      "title": "Main",
+      "cards": [
+        {
+          "id": "living-room",
+          "title": "Living Room",
+          "layout": "verticalLayout",
+          "items": [
+            {
+              "type": "device",
+              "icon": "lightbulb",
+              "label": "Lamp",
+              "state": true
+            },
+            {
+              "type": "sensor",
+              "icon": "thermostat",
+              "label": "Temperature",
+              "value": {
+                "amount": 23.5,
+                "unit": "°C"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
 ```
 
@@ -229,6 +283,8 @@ Requires `Authorization: Bearer <token>` header.
 #### `PATCH /api/devices/:deviceId`
 
 Update the state of a device across both `dashboards` and the `devices` list.
+
+Only items with `"type": "device"` are allowed. Attempting to patch a sensor will return `400 Bad Request`.
 
 Requires `Authorization: Bearer <token>` header.
 

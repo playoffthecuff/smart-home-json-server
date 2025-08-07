@@ -15,7 +15,7 @@ function getUserByToken(req, res, server) {
   });
 }
 
-function requireAuth(req, res, next) {
+function requireAuth(req, res, next, server) {
   const user = getUserByToken(req, res, server);
   if (!user) return res.status(401).send("Unauthorized");
   req.user = user;
