@@ -2,7 +2,7 @@
   "devices": [
     {
       "type": "sensor",
-      "icon": "thermostat",
+      "icon": "@tui.thermometer",
       "label": "Temperature",
       "value": {
         "amount": 18.5,
@@ -12,7 +12,7 @@
     },
     {
       "type": "sensor",
-      "icon": "water_drop",
+      "icon": "@tui.waves",
       "label": "Humidity",
       "value": {
         "amount": 72,
@@ -22,7 +22,7 @@
     },
     {
       "type": "sensor",
-      "icon": "cloud",
+      "icon": "@tui.cloudy",
       "label": "Weather",
       "value": {
         "amount": 1,
@@ -32,7 +32,7 @@
     },
     {
       "type": "sensor",
-      "icon": "co2",
+      "icon": "@tui.co2",
       "label": "CO2 Sensor",
       "value": {
         "amount": 520,
@@ -42,7 +42,7 @@
     },
     {
       "type": "sensor",
-      "icon": "water_drop",
+      "icon": "@tui.waves",
       "label": "Humidity",
       "value": {
         "amount": 45,
@@ -52,7 +52,7 @@
     },
     {
       "type": "sensor",
-      "icon": "motion_photos_on",
+      "icon": "@tui.motion-sensor",
       "label": "Motion Sensor",
       "value": {
         "amount": 1,
@@ -62,21 +62,21 @@
     },
     {
       "type": "device",
-      "icon": "lightbulb",
+      "icon": "@tui.lightbulb",
       "label": "Floor Lamp",
       "state": true,
       "id": "70ffe6b5-b785-48d8-977e-77928b5608e0"
     },
     {
       "type": "device",
-      "icon": "power",
+      "icon": "@tui.plug-zap",
       "label": "TV Socket",
       "state": false,
       "id": "ba0ab237-f943-46fe-a47e-408d07c82978"
     },
     {
       "type": "sensor",
-      "icon": "thermostat",
+      "icon": "@tui.thermometer",
       "label": "Temperature",
       "value": {
         "amount": 23.5,
@@ -86,7 +86,7 @@
     },
     {
       "type": "sensor",
-      "icon": "co2",
+      "icon": "@tui.co2",
       "label": "CO2 Sensor",
       "value": {
         "amount": 610,
@@ -96,42 +96,42 @@
     },
     {
       "type": "device",
-      "icon": "lightbulb",
+      "icon": "@tui.pendant-lamp",
       "label": "Ceiling Light",
       "state": true,
       "id": "65e5ce06-70ab-412e-ad90-aa8a7641d783"
     },
     {
       "type": "device",
-      "icon": "lightbulb",
+      "icon": "@tui.recessed-luminaire",
       "label": "Ceiling Light",
       "state": false,
       "id": "d25866c5-3527-46b2-8944-a81299e41555"
     },
     {
       "type": "device",
-      "icon": "lightbulb",
+      "icon": "@tui.ceiling-fixture",
       "label": "Chandelier",
       "state": true,
       "id": "285dcbf4-626a-415d-8c9c-426644a987c7"
     },
     {
       "type": "device",
-      "icon": "lightbulb",
+      "icon": "@tui.ceiling-fans",
       "label": "Main Light",
       "state": true,
       "id": "d80bcbe2-ff9f-499b-879d-ba04ff4acbaf"
     },
     {
       "type": "device",
-      "icon": "lightbulb",
+      "icon": "@tui.surface-mounted-light",
       "label": "Ceiling Light",
       "state": false,
       "id": "89bc9f6a-a3ee-4d5f-816d-8fa72dc57150"
     },
     {
       "type": "sensor",
-      "icon": "flash_on",
+      "icon": "@tui.power-meter",
       "label": "Total Usage",
       "value": {
         "amount": 2.5,
@@ -141,7 +141,7 @@
     },
     {
       "type": "sensor",
-      "icon": "access_time",
+      "icon": "@tui.peak-hour",
       "label": "Peak Hour",
       "value": {
         "amount": 1,
@@ -151,7 +151,7 @@
     },
     {
       "type": "sensor",
-      "icon": "tv",
+      "icon": "@tui.tv",
       "label": "TV",
       "value": {
         "amount": 0.8,
@@ -161,7 +161,7 @@
     },
     {
       "type": "sensor",
-      "icon": "kitchen",
+      "icon": "@tui.microwave",
       "label": "Microwave",
       "value": {
         "amount": 0.5,
@@ -171,7 +171,7 @@
     },
     {
       "type": "sensor",
-      "icon": "heat_pump",
+      "icon": "@tui.gas-heater",
       "label": "Heater",
       "value": {
         "amount": 1.2,
@@ -181,7 +181,7 @@
     },
     {
       "type": "sensor",
-      "icon": "thermostat",
+      "icon": "@tui.thermometer",
       "label": "Temperature",
       "value": {
         "amount": 21.0,
@@ -191,7 +191,7 @@
     },
     {
       "type": "sensor",
-      "icon": "water_drop",
+      "icon": "@tui.waves",
       "label": "Humidity",
       "value": {
         "amount": 40,
@@ -201,7 +201,7 @@
     },
     {
       "type": "sensor",
-      "icon": "thermostat",
+      "icon": "@tui.thermometer",
       "label": "Temperature",
       "value": {
         "amount": 22.8,
@@ -211,7 +211,7 @@
     },
     {
       "type": "sensor",
-      "icon": "co2",
+      "icon": "@tui.co2",
       "label": "CO2",
       "value": {
         "amount": 460,
@@ -221,21 +221,21 @@
     },
     {
       "type": "device",
-      "icon": "door_front",
+      "icon": "@tui.door-lock",
       "label": "Door Lock",
       "state": true,
       "id": "d7c20a97-2542-425b-a4ee-53f32914fe4d"
     },
     {
       "type": "device",
-      "icon": "videocam",
+      "icon": "@tui.video",
       "label": "Camera Front",
       "state": true,
       "id": "953de0d3-c2a0-40c2-99cd-e4951a7b0fb7"
     },
     {
       "type": "sensor",
-      "icon": "motion_photos_on",
+      "icon": "@tui.motion-sensor",
       "label": "Motion",
       "value": {
         "amount": 1,
@@ -245,7 +245,7 @@
     },
     {
       "type": "device",
-      "icon": "notifications_active",
+      "icon": "@tui.siren",
       "label": "Main Alarm",
       "state": false,
       "id": "14ba3ee6-065f-47f0-971f-ce702e05c467"
