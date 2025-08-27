@@ -10,7 +10,7 @@
           "title": "Overview",
           "cards": [
             {
-              "id": "balcony-weather",
+              "id": "05658378-cc2a-41f3-bb12-23c6367b39eb",
               "title": "Balcony",
               "layout": "horizontalLayout",
               "items": [
@@ -44,7 +44,7 @@
               ]
             },
             {
-              "id": "indoor-rooms",
+              "id": "506e697c-e192-4180-9a58-0c2aa94a5428",
               "title": "Rooms",
               "layout": "verticalLayout",
               "items": [
@@ -69,7 +69,7 @@
               ]
             },
             {
-              "id": "bathroom-motion",
+              "id": "02d35e29-7be5-4419-8ac6-a33b7f4cbe07",
               "title": "Bathroom",
               "layout": "singleDevice",
               "items": [
@@ -85,7 +85,7 @@
               ]
             },
             {
-              "id": "living-room-mixed",
+              "id": "0259a274-e055-4cb9-b54c-ce964d42e1d6",
               "title": "Living Room",
               "layout": "verticalLayout",
               "items": [
@@ -128,7 +128,7 @@
           "title": "Lights",
           "cards": [
             {
-              "id": "kitchen-light",
+              "id": "705bdd83-7de4-4d6d-88f6-ca582fc181cf",
               "title": "Kitchen",
               "layout": "singleDevice",
               "items": [
@@ -141,7 +141,7 @@
               ]
             },
             {
-              "id": "corridor-light",
+              "id": "8c80719c-170c-409c-a9f4-0f709ff4248d",
               "title": "Corridor",
               "layout": "singleDevice",
               "items": [
@@ -154,7 +154,7 @@
               ]
             },
             {
-              "id": "living-room-light",
+              "id": "4f88b689-ed03-42f3-badd-9d38b7fa03e1",
               "title": "Living Room",
               "layout": "singleDevice",
               "items": [
@@ -167,7 +167,7 @@
               ]
             },
             {
-              "id": "bedroom-light",
+              "id": "47f46582-6844-4a56-b193-d4cabde111ed",
               "title": "Bedroom",
               "layout": "singleDevice",
               "items": [
@@ -180,7 +180,7 @@
               ]
             },
             {
-              "id": "bathroom-light",
+              "id": "5eb5f2bf-5961-4f3b-821e-389792cc2923",
               "title": "Bathroom",
               "layout": "singleDevice",
               "items": [
@@ -206,7 +206,7 @@
           "title": "Current Usage",
           "cards": [
             {
-              "id": "meter-status",
+              "id": "438da65b-b809-4cd9-b04c-13b0c6c286bf",
               "title": "Electric Meter",
               "layout": "horizontalLayout",
               "items": [
@@ -231,7 +231,7 @@
               ]
             },
             {
-              "id": "usage-breakdown",
+              "id": "596a602f-1788-4847-a8da-618873f939fc",
               "title": "Appliance Breakdown",
               "layout": "verticalLayout",
               "items": [
@@ -278,7 +278,7 @@
           "title": "Indoor",
           "cards": [
             {
-              "id": "climate-bedroom",
+              "id": "f25bc868-ef7d-49bb-8c25-177c8dbcccea",
               "title": "Bedroom",
               "layout": "singleDevice",
               "items": [
@@ -303,7 +303,7 @@
               ]
             },
             {
-              "id": "climate-kitchen",
+              "id": "11c28795-3aa3-4412-aa98-205f98d64e5a",
               "title": "Kitchen",
               "layout": "singleDevice",
               "items": [
@@ -341,7 +341,7 @@
           "title": "Home",
           "cards": [
             {
-              "id": "entrance-door",
+              "id": "952c783f-5314-4387-8844-aa5a4680decd",
               "title": "Entrance",
               "layout": "singleDevice",
               "items": [
@@ -354,7 +354,7 @@
               ]
             },
             {
-              "id": "camera-zone1",
+              "id": "5cb86c14-e06d-4b24-8e7a-397410631b11",
               "title": "Camera Zone 1",
               "layout": "verticalLayout",
               "items": [
@@ -376,7 +376,7 @@
               ]
             },
             {
-              "id": "alarm-status",
+              "id": "c19ed12b-081f-4222-a7a2-21958c5086da",
               "title": "Alarm",
               "layout": "singleDevice",
               "items": [
